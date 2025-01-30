@@ -1565,3 +1565,25 @@ section {
 #footer .credits a:hover {
   color: #0a98c0;
 }
+#topbar {
+  background: #0a98c0; 
+  color: white;
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+#topbar .contact-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#topbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#topbar a:hover {
+  text-decoration: underline;
+}
