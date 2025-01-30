@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  top: 40px;
+  top: 10px;
   height: 90px;
 }
 
