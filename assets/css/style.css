@@ -98,17 +98,9 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   top: 20px;
   height:100px; */
-  
-  position: fixed;
-  top: 30px; /* Adjusted for topbar */
-  width: 100%;
-  background: white;
-  transition: all 0.3s ease;
-  padding: 20px 0; /* Default padding */
-}
+  top: 30px; /* Adjust this based on the height of your top bar */
+  transition: top 0.3s;  
 
-.header-small {
-    padding: 10px 0; /* Decreased padding on scroll */
 }
 
 
