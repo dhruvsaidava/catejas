@@ -103,6 +103,10 @@ h1, h2, h3, h4, h5, h6 {
     transition: top 0.3s;
 }
 
+.header-small {
+  padding: 10px 0; /* Decreased padding on scroll */
+}
+
 #header.header-transparent {
   background: transparent;
 }
