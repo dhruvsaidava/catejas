@@ -83,12 +83,24 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+#topbar {
+  background: #f8f9fa; /* Light background color */
+    padding: 5px 0; /* Adjust top bar height */
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1030;
+}
 #header {
-  background: #fff;
+  /* background: #fff;
   transition: all 0.5s;
   z-index: 997;
   top: 20px;
-  height:100px;
+  height:100px; */
+
+  top: 30px; /* Adjust this based on the height of your top bar */
+    transition: top 0.3s;
 }
 
 #header.header-transparent {
