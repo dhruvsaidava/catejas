@@ -1603,3 +1603,64 @@ section {
 #topbar a:hover {
   text-decoration: underline;
 }
+
+/* Dropdown menu styles */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.navbar ul li.dropdown ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  background: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.navbar ul li.dropdown:hover ul {
+  display: block;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background: #fff;
+  }
+
+  .navbar ul.active {
+      display: flex;
+  }
+
+  .navbar ul li {
+      width: 100%;
+  }
+
+  .navbar ul li.dropdown ul {
+      position: static;
+      box-shadow: none;
+  }
+
+  .mobile-nav-toggle {
+      display: block;
+      cursor: pointer;
+  }
+}
+
