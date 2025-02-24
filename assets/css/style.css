@@ -1605,7 +1605,7 @@ section {
 }
 
 /* Dropdown menu styles */
-.navbar ul {
+/* .navbar ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1637,7 +1637,7 @@ section {
 }
 
 /* Mobile Styles */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .navbar ul {
       display: none;
       flex-direction: column;
@@ -1662,5 +1662,5 @@ section {
       display: block;
       cursor: pointer;
   }
-}
+} */
 
