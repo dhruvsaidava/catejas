@@ -568,7 +568,69 @@ section {
 
 /* Services Section
 --------------------------------*/
-#services {
+<style>
+  .services .box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.3s ease;
+  }
+
+  .services .box:hover {
+    transform: translateY(-10px);
+  }
+
+  .services .box .icon {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  .services .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .services .description {
+    font-size: 14px;
+    color: #444;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+
+  .equal-height {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .equal-height > div {
+    flex: 1 1 calc(33.333% - 30px);
+    display: flex;
+  }
+
+  @media (max-width: 991px) {
+    .equal-height > div {
+      flex: 1 1 calc(50% - 30px);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .equal-height > div {
+      flex: 1 1 100%;
+    }
+  }
+</style>
+
+/* #services {
   padding: 60px 0 40px 0;
 }
 
@@ -622,7 +684,7 @@ section {
   line-height: 28px;
   margin-bottom: 0;
   text-align: left;
-}
+} */
 
 /* Why Us Section
 --------------------------------*/
