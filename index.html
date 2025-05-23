@@ -464,29 +464,6 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <!-- Service Section Js-->
-  <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.learn-more').forEach(button => {
-      button.addEventListener('click', function () {
-        const full = this.previousElementSibling;
-        const short = full.previousElementSibling;
-
-        if (full.classList.contains('d-none')) {
-          full.classList.remove('d-none');
-          short.classList.add('d-none');
-          this.textContent = 'Show Less';
-        } else {
-          full.classList.add('d-none');
-          short.classList.remove('d-none');
-          this.textContent = 'Learn More';
-        }
-      });
-    });
-  });
-</script>
-
-
 </body>
 
 </html>
