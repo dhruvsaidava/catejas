@@ -570,21 +570,23 @@ section {
 --------------------------------*/
 
 <style>
-  .box {
-    min-height: 420px; /* Adjust based on tallest box (Corporate Compliance) */
+  .services .box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 500px; /* adjust based on your desired fixed height */
+    transition: all 0.3s ease;
   }
 
-  .description.full {
+  .services .box.expanded {
+    min-height: auto;
+  }
+
+  .services .description.full {
     margin-top: 10px;
   }
-
-  .btn.learn-more {
-    margin-top: auto;
-  }
 </style>
+
 
 
 /* #services {
