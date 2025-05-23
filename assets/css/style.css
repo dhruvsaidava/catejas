@@ -569,27 +569,7 @@ section {
 /* Services Section
 --------------------------------*/
 
-<style>
-  .services .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 500px; /* adjust based on your desired fixed height */
-    transition: all 0.3s ease;
-  }
-
-  .services .box.expanded {
-    min-height: auto;
-  }
-
-  .services .description.full {
-    margin-top: 10px;
-  }
-</style>
-
-
-
-/* #services {
+#services {
   padding: 60px 0 40px 0;
 }
 
@@ -643,7 +623,7 @@ section {
   line-height: 28px;
   margin-bottom: 0;
   text-align: left;
-} */
+}
 
 /* Why Us Section
 --------------------------------*/
