@@ -548,6 +548,38 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+  const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+  const navbar = document.getElementById('navbar');
+  const dropdownLinks = document.querySelectorAll('.navbar .dropdown > a, .navbar .dropdown-submenu > a');
+
+  mobileNavToggle.addEventListener('click', () => {
+    navbar.classList.toggle('navbar-mobile');
+  });
+
+  dropdownLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      if (navbar.classList.contains('navbar-mobile')) {
+        e.preventDefault();
+        const parentLi = this.parentElement;
+
+        if (parentLi.classList.contains('dropdown-active')) {
+          parentLi.classList.remove('dropdown-active');
+        } else {
+          // Close other open dropdowns if you want single open only
+          const activeDropdowns = navbar.querySelectorAll('.dropdown-active');
+          activeDropdowns.forEach(d => d.classList.remove('dropdown-active'));
+
+          parentLi.classList.add('dropdown-active');
+        }
+      }
+    });
+  });
+});
+
+  </script>
+
 </body>
 
 </html>
