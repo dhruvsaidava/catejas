@@ -544,7 +544,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  
+
   <!-- Service Section Js-->
   <script>
   document.querySelectorAll('.learn-more').forEach(button => {
@@ -554,18 +554,32 @@
       const fullDesc = box.querySelector('.description.full');
       const isExpanded = !fullDesc.classList.contains('d-none');
 
+      // Collapse all other boxes
+      document.querySelectorAll('.box').forEach(b => {
+        if (b !== box) {
+          b.classList.remove('expanded');
+          b.querySelector('.description.short').classList.remove('d-none');
+          b.querySelector('.description.full').classList.add('d-none');
+          b.querySelector('.learn-more').textContent = 'Learn More';
+        }
+      });
+
+      // Toggle current box
       if (isExpanded) {
         fullDesc.classList.add('d-none');
         shortDesc.classList.remove('d-none');
+        box.classList.remove('expanded');
         button.textContent = 'Learn More';
       } else {
         shortDesc.classList.add('d-none');
         fullDesc.classList.remove('d-none');
+        box.classList.add('expanded');
         button.textContent = 'Show Less';
       }
     });
   });
 </script>
+
 
 </body>
 
