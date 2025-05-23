@@ -168,13 +168,15 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/* === Fix for Submenu Position (2nd-level) === */
+
+/* === Always Show Submenu (2nd-level) on the Left === */
 .navbar .dropdown-submenu > ul {
-  left: 100%;
+  position: absolute;
   top: 0;
+  right: 100%; /* Always align to the left of parent */
+  left: auto;
   opacity: 0;
   visibility: hidden;
-  position: absolute;
   background: #fff;
   min-width: 200px;
   padding: 10px 0;
@@ -187,6 +189,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
   visibility: visible;
 }
+
 
 /* ✅ Show to the left on desktop to avoid screen overflow */
 @media (min-width: 992px) {
