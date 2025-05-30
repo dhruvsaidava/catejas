@@ -288,5 +288,4 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
 })()
